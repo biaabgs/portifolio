@@ -6,6 +6,10 @@
     <title>Portifolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1515a54f92.js" crossorigin="anonymous"></script>    
 </head>
 <body>
     <header class="header">
@@ -16,7 +20,7 @@
                         <li><a class="titulos" onclick="scrollWin()">Home</a></li>
                         <li><a class="titulos" onclick="scrollWin2()">Curiosidades</a></li>
                         <li><a class="titulos" onclick="scrollWin3()">Sobre mim</a></li>
-                        <li><a class="titulo" onclick="scrollWin4()">Contato</a></li>
+                        <li><a class="titulos" onclick="scrollWin4()">Contato</a></li>
                     </ul>
                 </nav>
             </div><!--flex-->
@@ -27,55 +31,49 @@
         <h1>BEATRIZ <span>GONÇALVES</span></h1>
     </section>
 
-    <script src="menu.js"></script>
+    <script src="script.js"></script>
 
-    <section class="especiliadades">
+    <section class="interesses">
             <div class="interface">
                 <h1 class="titulo">INTERESSES</h1>
-                <div class="flex">
-                    <div class="hobbies-box">
+                <div class="flex_interesses">
+                    <div class="interesses-box"><a onclick="scrollWin5()">
                         <i class="material-symbols-outlined">computer</i>
                         <h3>Projetos</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, nulla rem dolore inventore delectus at.</p>
-                    </div><!--hobbies-box-->
+                        <p>Desenvolvedora web com foco em frontend, vou compartilhar alguns projetos de site que desenvolvi.</p>
+                    </div><!--interesses-box--></a>
 
-                    <div class="hobbies-box">
+                    <div class="interesses-box">
                         <i class="material-symbols-outlined">photo_camera</i>
                         <h3>Fotografia</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, nulla rem dolore inventore delectus at.</p>
-                    </div><!--hobbies-box-->
+                        <p>No tempo livre gosto de tirar algumas fotos, capturar emoções, histórias e momentos que falam por si. Fotografar é uma forma de desacelerar, observar mais e transformar instantes comuns em memórias inesquecíveis.</p>
+                    </div><!--interesses-box-->
 
-                    <div class="hobbies-box">
-                        <i class="bi bi-wordpress"></i>
-                        <h3>Volei</h3>
+                    <div class="interesses-box">
                         <i class="material-symbols-outlined">sports_volleyball</i>
-                    </div><!--hobbies-box-->
+                        <h3>Volei</h3>
+                        <p>Jogo vôlei desde meus 10 anos, encontrei no vôlei uma forma leve e divertida de manter o corpo ativo e a mente equilibrada.</p>
+                    </div><!--interesses-box-->
                 </div><!--flex-->
             </div><!--interface-->
-        </section><!--especiliadades-->
+        </section><!--interesses-->
+
+
 
     <section class="portfolio">
             <div class="interface">
-                <h1 class="titulo">HOBBIES</h1>
-                <div class="flex">
-                    <div class="img-port" style="background-image: url();">
-                        <div class="overlay">Fotografia</div>
-                        <i class="material-symbols-outlined">photo_camera</i>
-                    </div>  
-                    <div class="img-port" style="background-image: url(images/imagem.jpg);">
-                        <div class="overlay">Volei</div>
-                        <i class="material-symbols-outlined">sports_volleyball</i>
-                    </div>
-                    <div class="img-port" style="background-image: url(images/imagem.jpg);">
-                        <div class="overlay">Projetos</div>
-                        <i class="material-symbols-outlined">computer</i>
-                    </div>
-                </div><!--flex-->
+                <h1 class="titulo">PROJETOS</h1>
+                    <p class="descricao_projetos">Site desenvolvido para um restaurante de comida japonesa. Um site que conecta a tradição japonesa, design minimalista e usabilidade moderna.</p>
+
+                        </div>
+
+                    </div><!-- divisoes_box -->
             </div><!--interface-->
         </section><!--portfolio-->
 
     
         icone git hub
+        <i class="fa-brands fa-github"></i>
         
         
     <!-- <section>   

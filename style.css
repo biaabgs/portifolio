@@ -1,8 +1,3 @@
-.container{
-    max-width: 1280px;
-    margin: auto;
-}
-
 .flex{
     display: flex;
     align-items: center;
@@ -19,7 +14,7 @@ header{
 }
 
 header.rolagem{
-    background-color: #8d6858;
+    background-color: #7b4230;
     padding: 20px 4%;
 }
 
@@ -42,13 +37,20 @@ header ul li a{
     font-size: 25px;
 }
 
+header ul li a:hover{
+    color: #411e0c;
+    text-decoration: none;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
 .banner{
     height: 100vh;
     background-image: url();
     background-position: 100% 0;
     background-repeat: no-repeat;
     background-size: cover;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -68,13 +70,13 @@ body{
 }
 
 .interface {
-    max-width: 1280px;
-    margin: auto;
+    max-width: 1000px;
+
 }
 
 .interface h1{
     font-size: 2.5em;
-    color: #874421;
+    color: #553d2a;
 }
 
 section.portfolio {
@@ -96,4 +98,80 @@ section.portfolio .flex {
     cursor: pointer;
     border-radius: 40px;
     position: relative;
+}
+
+section.interesses {
+    max-width: 100%;
+}
+
+section.interesses .flex {
+    gap: 60px;
+}
+
+.interesses .interesses-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #c7b69f;
+    cursor: pointer;
+}
+
+.interesses .interesses-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+section.interesses {
+    padding: 40px 4%;
+}
+
+section.interesses .flex {
+    gap: 60px;
+}
+
+.interesses .interesses-box {
+    color: #553d2a;
+    padding: 40px;
+    border-radius: 20px;
+    transition: .2s;
+}
+
+.interesses-box{
+    padding-right: 2vw;
+    max-width: 20vw;
+}
+
+.interesses .interesses-box i {
+    font-size: 70px;
+    color: #553d2a;
+}
+
+.interesses .interesses-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+.flex_interesses{
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+
+}
+
+.titulo {
+    color: #fff;
+    font-size: 38px;
+    text-align: left;
+    margin-left: 2vw;
+    
+}
+
+.titulos{
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.interesses-box p{
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 18px;
+}
+.interesses-box h3{
+    font-family: "Bungee", sans-serif;
 }
