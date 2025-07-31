@@ -18,8 +18,10 @@ header.rolagem{
     padding: 20px 4%;
 }
 
-header.rolagem a{
+header.rolagem a, header.rolagem i{
     color: #dbbaac;
+    font-size: 20px;
+    transition: .5s;
 }
 
 header ul{
@@ -37,7 +39,13 @@ header ul li a{
     font-size: 25px;
 }
 
-header ul li a:hover{
+header i{
+    font-size: 25px;
+    color: #874421;
+}
+
+
+header ul li a:hover, header i:hover{
     color: #411e0c;
     text-decoration: none;
     font-size: 25px;
@@ -66,7 +74,7 @@ header ul li a:hover{
 
 body{
     height: 100vh;
-    background-color: #dbbaac;
+    background-color: #f2e8e1;
 }
 
 .interface {
@@ -80,8 +88,9 @@ body{
 }
 
 section.portfolio {
-    padding: 80px 4%;
+    padding: 60px 4%;
     box-shadow: 0 0 40px 10px #ffffff1d;
+    margin-top: 9.8vw;
 }
 
 section.portfolio .flex {
@@ -157,11 +166,9 @@ section.interesses .flex {
 }
 
 .titulo {
-    color: #fff;
-    font-size: 38px;
     text-align: left;
     margin-left: 2vw;
-    
+    font-family: "DM Serif Text", serif;
 }
 
 .titulos{
@@ -174,4 +181,12 @@ section.interesses .flex {
 }
 .interesses-box h3{
     font-family: "Bungee", sans-serif;
+}
+
+.titulo_portifolio {
+    text-align: left;
+    margin-left: 2vw;
+    font-family: "DM Serif Text", serif;
+    font-size: 2em;
+    color: #553d2a
 }
