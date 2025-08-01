@@ -48,17 +48,12 @@ header i{
 header ul li a:hover, header i:hover{
     color: #411e0c;
     text-decoration: none;
-    font-size: 25px;
     cursor: pointer;
     transition: 0.5s;
 }
 
 .banner{
     height: 100vh;
-    background-image: url();
-    background-position: 100% 0;
-    background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -189,4 +184,63 @@ section.interesses .flex {
     font-family: "DM Serif Text", serif;
     font-size: 2em;
     color: #553d2a
+}
+
+.site_otomo{
+    text-decoration: none;
+    border-radius: 20px;
+    color: #411e0c;
+}
+
+.texto_portifolio p{
+    margin-right: 15px;
+    text-align: right;
+    justify-content: center;
+    justify-items: right;
+    margin-right: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: aqua;
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 15px;
+}
+
+.titulo_portifolio {
+    color: yellowgreen;
+    font-size: 2.5rem;
+    font-family: 'Garet', sans-serif;
+    margin-right: 15px;
+    justify-content: center;
+    margin-right: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+ .texto_portifolio a{
+    text-decoration: none;
+}
+
+.button_right {
+    display: flex;
+    background-color: yellowgreen;
+    border-radius: 50px;
+    text-align: center;
+    justify-content: center;
+    width: 200px;
+    height: 60px;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.button_right a{
+    margin-right: 15px;
+    text-align: right;
+    justify-content: center;
+    justify-items: right;
+    margin-right: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: red;
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 45px;
 }
