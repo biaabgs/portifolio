@@ -84,8 +84,9 @@ body{
 
 section.portfolio {
     padding: 60px 4%;
-    box-shadow: 0 0 40px 10px #ffffff1d;
+    background-color: purple;
     margin-top: 9.8vw;
+
 }
 
 section.portfolio .flex {
@@ -106,6 +107,7 @@ section.portfolio .flex {
 
 section.interesses {
     max-width: 100%;
+    background-color: blue;
 }
 
 section.interesses .flex {
