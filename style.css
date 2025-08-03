@@ -1,12 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .flex{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+body{
+    height: 100vh;
+    background-color: #f2e8e1;
+}
+
+/* Header */
 header{
     width: 100%;
-    padding: 60px 4%;
+    padding: 76px 4%;
     position: fixed;
     top: 0;
     left: 0;
@@ -16,7 +28,13 @@ header{
 
 header.rolagem{
     background-color: #7b4230;
-    padding: 20px 4%;
+    padding: 35px 4%;
+}
+
+header.rolagem a, header.rolagem i{
+    color: #dbbaac;
+    font-size: 20px;
+    transition: .5s;
 }
 
 header.rolagem a, header.rolagem i{
@@ -53,6 +71,8 @@ header ul li a:hover, header i:hover{
     transition: 0.5s;
 }
 
+/* Banner  */
+
 .banner{
     height: 100vh;
     display: flex;
@@ -68,47 +88,20 @@ header ul li a:hover, header i:hover{
     color: #874421;
 }
 
-body{
-    height: 100vh;
-    background-color: #f2e8e1;
+/* Comum */
+.comum {
+    max-width: 1380px;
 }
 
-.interface {
-    max-width: 1000px;
 
-}
 
-.interface h1{
-    font-size: 2.5em;
-    color: #553d2a;
-}
-
-section.portfolio {
-    padding: 60px 4%;
-    background-color: purple;
-    margin-top: 9.8vw;
-
-}
-
-section.portfolio .flex {
-    justify-content: space-around;
-    margin-top: 60px;
-}
-
-.img-port {
-    width: 360px;
-    height: 460px;
-    background-size: cover;
-    background-position: 100% 0%;
-    transition: 8s;
-    cursor: pointer;
-    border-radius: 40px;
-    position: relative;
-}
+/* Interesses */
 
 section.interesses {
-    max-width: 100%;
-    background-color: blue;
+    width: 100%;
+    padding: 60px 4%;
+    left: 0;
+    transition: .5s;
 }
 
 section.interesses .flex {
@@ -130,10 +123,6 @@ section.interesses {
     padding: 40px 4%;
 }
 
-section.interesses .flex {
-    gap: 60px;
-}
-
 .interesses .interesses-box {
     color: #553d2a;
     padding: 40px;
@@ -142,8 +131,8 @@ section.interesses .flex {
 }
 
 .interesses-box{
-    padding-right: 2vw;
-    max-width: 20vw;
+    padding-right: 3vw;
+    max-width: 27vw;
 }
 
 .interesses .interesses-box i {
@@ -159,14 +148,16 @@ section.interesses .flex {
 .flex_interesses{
     display: flex;
     justify-content: space-between;
-    width: 80vw;
-
+    width: 85vw;
 }
 
 .titulo {
     text-align: left;
     margin-left: 2vw;
     font-family: "DM Serif Text", serif;
+    font-size: 2.5em;
+    margin-bottom: 1vw;
+    color: #553d2a;
 }
 
 .titulos{
@@ -175,27 +166,33 @@ section.interesses .flex {
 
 .interesses-box p{
     font-family: "Red Hat Display", sans-serif;
-    font-size: 18px;
+    font-size: 17px;
 }
 .interesses-box h3{
     font-family: "Bungee", sans-serif;
 }
 
-.titulo_portifolio {
-    text-align: left;
-    margin-left: 2vw;
-    font-family: "DM Serif Text", serif;
-    font-size: 2em;
-    color: #553d2a
+/* portfolio */
+
+section.portfolio {
+    padding: 4vw 4%;
+    background-color: purple;
+    margin-top: 9.8vw;
 }
 
-.site_otomo{
-    text-decoration: none;
-    border-radius: 20px;
-    color: #411e0c;
+section.portfolio .flex {
+    justify-content: space-around;
+    margin-top: 60px;
 }
 
-.texto_portifolio p{
+.img_portfolio img{
+    line-height: 0;
+    border-radius: 40px;
+    background-color: aqua;
+    width: 25vw;
+}
+
+.texto_portfolio p{
     margin-right: 15px;
     text-align: right;
     justify-content: center;
@@ -208,19 +205,16 @@ section.interesses .flex {
     font-size: 15px;
 }
 
-.titulo_portifolio {
-    color: yellowgreen;
-    font-size: 2.5rem;
-    font-family: 'Garet', sans-serif;
-    margin-right: 15px;
-    justify-content: center;
-    margin-right: 100vh;
-    margin: 0;
-    padding: 0;
+ .texto_portfolio a{
+    text-decoration: none;
 }
 
- .texto_portifolio a{
-    text-decoration: none;
+.container_portfolio {
+    display: flex;
+    align-items: center;
+    background-color: #063025;
+    width: 75vw;
+    margin-left: 2vw;
 }
 
 .button_right {
@@ -247,3 +241,4 @@ section.interesses .flex {
     font-family: "Red Hat Display", sans-serif;
     font-size: 45px;
 }
+
