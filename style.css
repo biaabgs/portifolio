@@ -17,9 +17,9 @@ body{
 
 .titulo {
     text-align: left;
-    margin-left: 2vw;
+    margin-left: 3vw;
     font-family: "DM Serif Text", serif;
-    font-size: 2.5em;
+    font-size: 3.5em;
     margin-bottom: 1vw;
     color: #553d2a;
 }
@@ -106,8 +106,6 @@ header ul li a:hover, header i:hover{
     max-width: 1380px;
 }
 
-
-
 /* INTERESSES */
 
 section.interesses {
@@ -145,7 +143,8 @@ section.interesses {
 
 .interesses-box{
     padding-right: 3vw;
-    max-width: 27vw;
+    max-width: 25vw;
+    height: 17vw;
 }
 
 .interesses .interesses-box i {
@@ -162,7 +161,6 @@ section.interesses {
     display: flex;
     justify-content: space-between;
     width: 85vw;
-    background-color: gray;
     padding: 2vw;
 }
 
@@ -178,7 +176,7 @@ section.interesses {
 
 section.portfolio {
     padding: 4vw 4%;
-    background-color: purple;
+    background-color: #f0dcce;
     margin-top: 9.8vw;
 }
 
@@ -190,19 +188,19 @@ section.portfolio .flex {
 .img_portfolio img{
     line-height: 0;
     border-radius: 40px;
-    background-color: aqua;
+    /* background-color: aqua; */
     width: 25vw;
 }
 
-.texto_portfolio p{
-    margin-right: 15px;
+.descricao_projetos{
+    margin-left: 15px;
     text-align: right;
     justify-content: center;
     justify-items: right;
     margin-right: 100vh;
-    margin: 0;
+    margin: 0 50px;
     padding: 0;
-    background-color: aqua;
+    /* background-color: aqua; */
     font-family: "Red Hat Display", sans-serif;
     font-size: 15px;
 }
@@ -214,14 +212,14 @@ section.portfolio .flex {
 .container_portfolio {
     display: flex;
     align-items: center;
-    background-color: #063025;
+    /* background-color: #063025; */
     width: 75vw;
     margin-left: 2vw;
 }
 
 .button_right {
     display: flex;
-    background-color: yellowgreen;
+    background-color: #411e0c;
     border-radius: 50px;
     text-align: center;
     justify-content: center;
@@ -239,9 +237,11 @@ section.portfolio .flex {
     margin-right: 100vh;
     margin: 0;
     padding: 0;
-    background-color: red;
+    /* background-color: red; */
     font-family: "Red Hat Display", sans-serif;
     font-size: 45px;
+    text-decoration: none;
+    color: aliceblue;
 }
 
 /* FOTOGRAFIA */
@@ -250,25 +250,59 @@ section.fotografia {
     padding: 4vw 4%;
     background-color: purple;
     margin-top: 9.8vw;
-}
-
-.container_fotografia {
     display: flex;
+    text-align: center; 
     align-items: center;
-    background-color: #063025;
-    width: 75vw;
-    margin-left: 2vw;
+     justify-content: center;
 }
 
-.flex_fotografia {
+.fotos1{
     display: flex;
-    justify-content: space-between;
-    width: 75vw;
-    background-color: gray;
-    padding: 2vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
 }
 
-.fotografia_box {
-    padding-right: 3vw;
-    max-width: 27vw;
+.fotos2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.fotos1 img {
+    max-width: 332px;
+    max-height: 332px;
+    object-fit: cover;
+    transition: 0.2s;
+    background-color: aqua;
+}
+
+.fotos1 img:hover, .fotos2 img:hover{
+    transition: 0.2s;
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.fotos2 img{
+    max-width: 590px;
+    max-height: 490px;
+    object-fit: cover;
+    transition: 0.2s;
+}
+
+.container_fotografia{
+    display: flex;
+    justify-content: space-around;
+    width: 85vw;
+    /* background-color: blue; */
+    padding: 2px;
+}
+
+.fotografia h1{
+    font-family: "DM Serif Text", serif;
+    font-size: 2.5em;
+    margin-bottom: 1vw;
+    color: #553d2a;
+    margin-top: 2vw;
 }

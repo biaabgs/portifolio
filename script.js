@@ -15,7 +15,7 @@ function scrollWin() {
 
 function scrollWin2() {
     window.scrollTo({
-        top: 2800,
+        top: 725,
         left: 0,
         behavior: 'smooth'
     });
