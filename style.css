@@ -18,7 +18,7 @@ body{
 .titulo {
     text-align: left;
     margin-left: 3vw;
-    font-family: "DM Serif Text", serif;
+    font-family: "Libertinus Serif", serif;
     font-size: 3.5em;
     margin-bottom: 1vw;
     color: #553d2a;
@@ -194,15 +194,16 @@ section.portfolio .flex {
 
 .descricao_projetos{
     margin-left: 15px;
-    text-align: right;
+    text-align: left;
     justify-content: center;
     justify-items: right;
-    margin-right: 100vh;
-    margin: 0 50px;
+    /* margin-right: 00vh; */
+    margin: 0px 0px;
     padding: 0;
     /* background-color: aqua; */
     font-family: "Red Hat Display", sans-serif;
-    font-size: 15px;
+    font-size: 1.5rem;
+    width: 50vw
 }
 
  .texto_portfolio a{
@@ -224,7 +225,7 @@ section.portfolio .flex {
     text-align: center;
     justify-content: center;
     width: 200px;
-    height: 60px;
+    height: 50px;
     margin-top: 10px;
     align-items: center;
 }
@@ -239,7 +240,7 @@ section.portfolio .flex {
     padding: 0;
     /* background-color: red; */
     font-family: "Red Hat Display", sans-serif;
-    font-size: 45px;
+    font-size: 2rem;
     text-decoration: none;
     color: aliceblue;
 }
@@ -250,10 +251,9 @@ section.fotografia {
     padding: 4vw 4%;
     background-color: purple;
     margin-top: 9.8vw;
-    display: flex;
-    text-align: center; 
-    align-items: center;
-     justify-content: center;
+    text-align: center;
+    display: grid;
+    justify-content: center;
 }
 
 .fotos1{
@@ -261,6 +261,7 @@ section.fotografia {
     flex-wrap: wrap;
     justify-content: center;
     overflow: hidden;
+    width: 100%;
 }
 
 .fotos2{
@@ -275,12 +276,11 @@ section.fotografia {
     max-height: 332px;
     object-fit: cover;
     transition: 0.2s;
-    background-color: aqua;
 }
 
 .fotos1 img:hover, .fotos2 img:hover{
     transition: 0.2s;
-    transform: scale(1.03);
+    transform: scale(1.20);
     cursor: pointer;
 }
 
@@ -292,10 +292,9 @@ section.fotografia {
 }
 
 .container_fotografia{
-    display: flex;
-    justify-content: space-around;
-    width: 85vw;
-    /* background-color: blue; */
+    display: grid;
+    justify-content: center;
+    background-color: blue;
     padding: 2px;
 }
 
@@ -304,5 +303,5 @@ section.fotografia {
     font-size: 2.5em;
     margin-bottom: 1vw;
     color: #553d2a;
-    margin-top: 2vw;
+    margin-top: 1vw;
 }
