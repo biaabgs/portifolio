@@ -355,6 +355,7 @@ section.sobre_mim{
     align-items: center;
     justify-content: space-around;
     padding: 10vw;
+    background-color: blue;
 }
 
 .texto_sm{
@@ -376,6 +377,7 @@ section.sobre_mim{
     font-style: normal;
     font-size: 10ch;
     line-height: 0.8;
+    margin-bottom: 2vh;
 }
 
 .texto_sm p{
@@ -387,7 +389,7 @@ section.sobre_mim{
     font-style: normal;
 }
 
-.bannerredes{
+.redes{
     color: var(--branco);
     text-decoration: none;
     width: 100%;
@@ -396,6 +398,10 @@ section.sobre_mim{
     flex-direction: row;
     align-items:first baseline;
     justify-content: flex-start;
+}
+
+.minirede a{
+    text-decoration: none;
 }
 
 .minirede{
