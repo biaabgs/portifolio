@@ -1,0 +1,148 @@
+.titulo{
+    text-align: center;
+    }
+
+    .link-titulo{
+        color: #493645;
+    }
+    
+
+    .chef{
+        background: hwb(25 88% 0%);
+        width: 100%;
+        top: 0px;
+        position: fixed;
+        z-index: 99;
+    }
+
+    
+    .cabecalho{
+    background: #493645;
+    width: 100%;
+    top: 65px;
+    position: fixed;
+    z-index: 99;
+    }
+
+    .ul-cabecalho{
+        display: flex;
+        justify-content: center;
+        }
+
+    .link-cabecalho{
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    ul{
+    display: flex;
+    justify-content: center;
+    }
+    
+    
+    a{
+        text-decoration: none;
+    }
+    
+    
+    li{
+    list-style: none;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    }
+    
+    .perfil {
+        position: absolute;
+        right: 25px;
+        top: 25px;
+        margin-left: 100px;
+        border-radius: 50%;
+    }
+    
+    
+    h1{
+    font-family:'Franklin Gothic Medium';
+    }
+    
+    
+    input{
+    width: 200px;
+    margin-bottom: 20px;
+    padding:10px;
+    border-radius: 10px;
+
+    }
+    button{
+    background-color: #919155;
+    color: white;
+    padding:10px;
+    width:80px;
+    border-radius: 10px;
+    }
+    
+    img{
+        border-radius: 5px;
+    }
+    
+    html, body {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .quadro{
+        width: 400px;
+        height: 260px;
+        border: 1px solid #060608;
+        background: #d192a2;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 15px;
+        margin-top: 280px;
+        text-align: center;
+
+        }
+    
+
+    .formulario{
+        justify-content: center;
+        align-items: center; 
+        margin-top: 15px;
+        position:relative;
+        
+  
+    }
+    footer{
+        background-color: #eec6b4;
+        width:100%;
+        display: flex;
+        position:fixed;
+        bottom:0px;
+    }
+
+    .final{
+    display: flex;
+    justify-content: center;
+    color: #9e4253;
+    margin-left:auto;
+    margin-right: auto;
+    
+    }
+    
+#quadro #formulario{
+ display:block;
+}
+
+a{
+    text-decoration: none;
+}
+
+.fundo{
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+    height:100%;
+    z-index: 1;
+}

@@ -1,0 +1,162 @@
+.titulo{
+    text-align: center;
+}
+
+    .chef{
+        background: #feede1;
+        width: 100%;
+        top: 0px;
+        position: fixed;
+        z-index: 99;
+}
+
+    
+    .cabecalho{
+    background: #493645;
+    width: 100%;
+    top: 65px;
+    position: fixed;
+    z-index: 99;
+}
+
+    
+    ul{
+    display: flex;
+    justify-content: center;
+    }
+    
+    
+    .link-titulo{
+        color: #493645;
+    }
+    
+    .link-cabecalho{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: space-around;
+    }
+    
+    
+    li{
+    list-style: none;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    }
+    .perfil {
+        position: absolute;
+        right: 25px;
+        top: 25px;
+        margin-left: 100px;
+        border-radius: 50%;
+    }
+    
+    
+    h1{
+    font-family:'Franklin Gothic Medium';
+    }
+    
+    
+    input{
+    width: 200px;
+    float: left margin ;
+    margin-bottom: 20px
+    }
+    
+    
+    
+    
+    html, body {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    
+    #title {
+        width: 100%;
+        position: absolute;
+        padding: 0px;
+        margin: 0px auto;
+        text-align: center;
+        font-size: 27px;
+        color: rgba(255, 255, 255, 1);
+        font-family: 'Open Sans', sans-serif;
+        z-index: 9999;
+        text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
+
+
+    }  
+
+    .produtosListaCestas{
+        display: flex;
+        width: 100%;
+    }
+
+    .produtosListaCestas figure{
+        width: 25%;
+    }
+
+    .divisaoProdutos{
+        margin-top:50px;
+    }
+
+    figure img {
+        width: 100%;
+        height: 320px;
+        border-radius: 15px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    footer{
+        background-color: #eec6b4;
+        width:100%;
+        display:flex ;
+        justify-content: center;
+        justify-content: end;
+        unicode-bidi: isolate;
+    }
+    footer{
+        background-color: #eec6b4;
+        width:100%;
+        display: flex;
+    }
+    .final{
+        display: flex;
+        justify-content: center;
+        column-span: 13%;
+        color: #9e4253;
+        margin-left:auto;
+        margin-right: auto;
+        
+    
+        }
+        a{
+            text-decoration: none;
+        }
+
+        .titulo-submenu{
+            margin-top: 165px;
+            text-align: center;
+            width: 100%;
+            font-size: 20px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .textos{
+            text-align: center;
+            width: 100%;
+            font-size: 15px;
+            font-family: 'Open Sans', sans-serif;
+        }
+        

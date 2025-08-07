@@ -95,6 +95,7 @@ header ul li a:hover, header i:hover{
 
 .banner h1{
     font-size: 4em;
+    color: #502611;
 }
 
 .banner h1 span{
@@ -126,7 +127,7 @@ section.interesses .flex {
 }
 
 .interesses .interesses-box h3 {
-    font-size: 28px;
+    font-size: 35px;
     margin: 15px 0;
 }
 
@@ -144,17 +145,12 @@ section.interesses {
 .interesses-box{
     padding-right: 3vw;
     max-width: 25vw;
-    height: 17vw;
+    height: 20vw;
 }
 
 .interesses .interesses-box i {
     font-size: 70px;
     color: #553d2a;
-}
-
-.interesses .interesses-box h3 {
-    font-size: 28px;
-    margin: 15px 0;
 }
 
 .flex_interesses{
@@ -166,7 +162,7 @@ section.interesses {
 
 .interesses-box p{
     font-family: "Red Hat Display", sans-serif;
-    font-size: 17px;
+    font-size: 20px;
 }
 .interesses-box h3{
     font-family: "Bungee", sans-serif;
@@ -175,50 +171,49 @@ section.interesses {
 /* PORTFOLIO */
 
 section.portfolio {
-    padding: 4vw 4%;
+    padding: 5vw;
     background-color: #f0dcce;
     margin-top: 9.8vw;
+    justify-content: center;
+    display: grid;
 }
 
-section.portfolio .flex {
-    justify-content: space-around;
-    margin-top: 60px;
+.titulo_portfolio{
+    text-align: left;
+    font-family: "Libertinus Serif", serif;
+    font-size: 3.5em;
+    color: #553d2a;
+    text-align: right;
+    margin-right: 7vw;
 }
 
-.img_portfolio img{
-    line-height: 0;
-    border-radius: 40px;
-    /* background-color: aqua; */
-    width: 25vw;
+.portfolio_otomo, .portfolio_cd{
+    margin-right: 7vw;
 }
 
-.descricao_projetos{
+.texto_otomo p, .texto_cd p{
     margin-left: 15px;
     text-align: left;
     justify-content: center;
     justify-items: right;
-    /* margin-right: 00vh; */
     margin: 0px 0px;
     padding: 0;
-    /* background-color: aqua; */
     font-family: "Red Hat Display", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     width: 50vw
 }
 
- .texto_portfolio a{
-    text-decoration: none;
+.texto_otomo h1, .texto_cd h1 {
+    margin-left: 15px;
+    text-align: left;
+    justify-content: center;
+    margin: 0px 0px;
+    padding: 0;
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 2rem;
 }
 
-.container_portfolio {
-    display: flex;
-    align-items: center;
-    /* background-color: #063025; */
-    width: 75vw;
-    margin-left: 2vw;
-}
-
-.button_right {
+.button {
     display: flex;
     background-color: #411e0c;
     border-radius: 50px;
@@ -230,45 +225,88 @@ section.portfolio .flex {
     align-items: center;
 }
 
-.button_right a{
+.button a{
     margin-right: 15px;
     text-align: right;
     justify-content: center;
     justify-items: right;
-    margin-right: 100vh;
     margin: 0;
     padding: 0;
-    /* background-color: red; */
     font-family: "Red Hat Display", sans-serif;
     font-size: 2rem;
     text-decoration: none;
-    color: aliceblue;
+    color: white;
+}
+
+/* Chef Dreams */
+
+.texto_cd h1 {
+    color: #411e0c;
+}
+
+.texto_cd {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    text-align: right;
+    padding-top: 5vh;
+}
+
+.portfolio_cd {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 2vw;
+    padding: 1vh;
+    width: 100%;
+    /* background-color: red; */
+    width: 75vw;
+    margin-left: 2vw;
+    height: 18vw;
+    margin-bottom: 1vw;
+}
+
+/* Otomo */
+.img_otomo img{
+    line-height: 0;
+    border-radius: 40px;
+    width: 25vw;
+}
+
+ .texto_otomo a{
+    text-decoration: none;
+}
+
+.texto_otomo h1{
+    color: #c55957;
+}
+
+.portfolio_otomo {
+    display: flex;
+    align-items: center;
+    /* background-color: #063025; */
+    width: 75vw;
+    margin-left: 2vw;
+    height: 18vw;
 }
 
 /* FOTOGRAFIA */
 
 section.fotografia {
     padding: 4vw 4%;
-    background-color: purple;
-    margin-top: 9.8vw;
+    /* background-color: purple; */
+    margin-top: 3vw;
     text-align: center;
     display: grid;
     justify-content: center;
 }
 
-.fotos1{
+.fotos1, .fotos2{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     overflow: hidden;
-    width: 100%;
-}
-
-.fotos2{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    overflow: hidden;
+    border: solid 2px #f2e8e1;
 }
 
 .fotos1 img {
@@ -280,28 +318,130 @@ section.fotografia {
 
 .fotos1 img:hover, .fotos2 img:hover{
     transition: 0.2s;
-    transform: scale(1.20);
+    transform: scale(1.05);
     cursor: pointer;
 }
 
 .fotos2 img{
-    max-width: 590px;
-    max-height: 490px;
+    width: 500px;
+    height: 375px;
     object-fit: cover;
     transition: 0.2s;
 }
 
 .container_fotografia{
-    display: grid;
+    display: flex;
     justify-content: center;
-    background-color: blue;
-    padding: 2px;
+    /* background-color: blue; */
 }
 
 .fotografia h1{
     font-family: "DM Serif Text", serif;
-    font-size: 2.5em;
+    font-size: 3.5em;
     margin-bottom: 1vw;
     color: #553d2a;
     margin-top: 1vw;
+}
+
+/* Sobre mim */
+
+section.sobre_mim{
+    height: 100vh;
+    background-color: var(--cinza);
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10vw;
+}
+
+.texto_sm{
+    background-color: transparent;
+    width: 50%;
+    height: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items:first baseline;
+    justify-content: center ;
+    color: var(--branco);
+    margin-right: 1vh;
+    margin-left: 12vh;
+}
+
+.texto_sm h1{
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 10ch;
+    line-height: 0.8;
+}
+
+.texto_sm p{
+    padding-top: 5px;
+    font-size: 2ch;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.bannerredes{
+    color: var(--branco);
+    text-decoration: none;
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items:first baseline;
+    justify-content: flex-start;
+}
+
+.minirede{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    margin-right: 1ch;
+    color: var(--branco);
+}
+
+.minirede i{
+    text-decoration: none;
+    font-size: 30px;
+    transition: all 0.5s ease;
+}
+.minirede i:hover{
+    color: var(--azulescuro);
+}
+
+.img_sm{
+    background-color: var(--azulescuro);
+    max-width:50%;
+    margin-left: 1vh;
+    min-height: 35vw;
+    border-radius: 50%;
+    overflow:hidden;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: top 1vh; ;
+    border: 4px solid var(--azulescuro);
+}
+
+.img_sm img{
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+.logo{
+    color: transparent;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style:normal;
 }
