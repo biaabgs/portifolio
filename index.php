@@ -172,10 +172,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = htmlspecialchars($_POST['email']);
     $mensagem = htmlspecialchars($_POST['mensagem']);
 
-    // Aqui você pode configurar o envio de email
-    // mail($destinatario, "Novo contato do portfólio", $mensagem, "From: $email");
-
-    echo "<p style='color:green; text-align:center;'>Mensagem enviada com sucesso! Obrigado, $nome.</p>";
+    echo "<p style='color:#55362a; text-align:center;'>Mensagem enviada com sucesso! Obrigado, $nome.</p>";
 }
 ?>
 
