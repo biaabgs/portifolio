@@ -346,8 +346,7 @@ section.fotografia {
 /* Sobre mim */
 
 section.sobre_mim{
-    height: 100vh;
-    background-color: var(--cinza);
+    height: auto;
     background-position: 100% 0;
     background-repeat: no-repeat;
     background-size: cover;
@@ -355,7 +354,7 @@ section.sobre_mim{
     align-items: center;
     justify-content: space-around;
     padding: 10vw;
-    background-color: blue;
+    background-color: #411e0c;
 }
 
 .texto_sm{
@@ -366,7 +365,7 @@ section.sobre_mim{
     flex-direction: column;
     align-items:first baseline;
     justify-content: center ;
-    color: var(--branco);
+    color: white;
     margin-right: 1vh;
     margin-left: 12vh;
 }
@@ -390,7 +389,7 @@ section.sobre_mim{
 }
 
 .redes{
-    color: var(--branco);
+    color: white;
     text-decoration: none;
     width: 100%;
     margin-top: 15px;
@@ -413,30 +412,28 @@ section.sobre_mim{
     border-radius: 50%;
     background-color: transparent;
     margin-right: 1ch;
-    color: var(--branco);
+    color: #c7b69f;
 }
 
 .minirede i{
     text-decoration: none;
     font-size: 30px;
     transition: all 0.5s ease;
+    color: white;
 }
 .minirede i:hover{
-    color: var(--azulescuro);
+    color: #502611;
 }
 
 .img_sm{
-    background-color: var(--azulescuro);
     max-width:50%;
     margin-left: 1vh;
     min-height: 35vw;
-    border-radius: 50%;
     overflow:hidden;
     display:flex;
     justify-content: center;
     align-items: center;
     padding: top 1vh; ;
-    border: 4px solid var(--azulescuro);
 }
 
 .img_sm img{
