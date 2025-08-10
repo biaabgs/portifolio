@@ -114,6 +114,7 @@ section.interesses {
     padding: 60px 4%;
     left: 0;
     transition: .5s;
+    margin-top: 3vw;
 }
 
 section.interesses .flex {
