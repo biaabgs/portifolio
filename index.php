@@ -1,7 +1,5 @@
 <?php 
 $arquivo = file("dados.txt");
-$nome = $arquivo[0];
-$nome_maiusc = strtoupper($nome);
 $sobrenome = $arquivo[1];
 $sobrenome_maiusc = strtoupper($sobrenome);
 ?>
@@ -27,7 +25,7 @@ $sobrenome_maiusc = strtoupper($sobrenome);
                 <nav>
                     <ul>
                         <li><a class="titulos" onclick="scrollWin()"><i class="fa-regular fa-house"></i></a></li>
-                        <li><a class="titulos" onclick="scrollWin2()">Sobre mim</a></li>
+                        <li><a class="titulos" onclick="scrollWin2()"><?php echo $arquivo[4]; ?></a></li>
                         <li><a class="titulos" onclick="scrollWin3()">Interesses</a></li>
                         <li><a class="titulos" onclick="scrollWin4()">Contato</a></li>
                     </ul>
@@ -37,18 +35,18 @@ $sobrenome_maiusc = strtoupper($sobrenome);
     </header>
 
     <section class="banner">
-        <h1>< <?php echo strtoupper($arquivo[0]); ?> <span><?php echo $sobrenome_maiusc;?></span></h1>
+        <h1><?php echo strtoupper($arquivo[0]); ?> <span><?php echo $sobrenome_maiusc;?></span></h1>
     </section>
 
     
 
     <section class="sobre_mim">
             <div class="texto_sm">
-            <h1 class="txtbanner2"><p><?php echo $nome . " " . $sobrenome;?></p></h1>
+            <h1 class="txtbanner2"><p><?php echo $arquivo[0] . " " . $arquivo[2];?></p></h1>
             <p><?php echo $arquivo[5]; ?></p>
         <div class="redes">
-            <div class="minirede"><a href="https://www.instagram.com" target="_blank" ><i class="fa-brands fa-instagram"></i></a></div>
-            <div class="minirede"><a href="https://github.com" target="_blank" ><i class="fa-brands fa-github"></i></a></div>
+            <div class="minirede"><a href="https://www.instagram.com/bia.dlk" target="_blank" ><i class="fa-brands fa-instagram"></i></a></div>
+            <div class="minirede"><a href="https://github.com/biaabgs" target="_blank" ><i class="fa-brands fa-github"></i></a></div>
             <div class="minirede"><a href="https://www.linkedin.com/" target="_blank" ><i class="fa-brands fa-linkedin"></i></a></div>
         </div>
     </div>
@@ -60,28 +58,24 @@ $sobrenome_maiusc = strtoupper($sobrenome);
 
     <section class="interesses">
         <div class="comum">
-            <h1 class="titulo">INTERESSES</h1>
+            <h1 class="titulo"><?php echo strtoupper($arquivo[7]);?></h1>
             <div class="flex_interesses">
                 <div class="interesses-box"><a onclick="scrollWin5()">
                         <i class="material-symbols-outlined">computer</i>
-                        <h3>Portfólio</h3>
-                        <p>Desenvolvedora web com foco em frontend, vou compartilhar alguns projetos de site que
-                            desenvolvi.</p>
+                        <h3><?php echo $arquivo[8]; ?></h3>
+                        <p><?php echo $arquivo[9]; ?></p>
                 </div><!--interesses-box--></a>
 
                 <div class="interesses-box">
                     <i class="material-symbols-outlined">photo_camera</i>
-                    <h3>Fotografia</h3>
-                    <p>No tempo livre gosto de tirar algumas fotos, capturar emoções, histórias e momentos que falam por
-                        si. Fotografar é uma forma de desacelerar, observar mais e transformar instantes comuns em
-                        memórias inesquecíveis.</p>
+                    <h3><?php echo $arquivo[11]; ?></h3>
+                    <p><?php echo $arquivo[12]; ?></p>
                 </div><!--interesses-box-->
 
                 <div class="interesses-box">
                     <i class="material-symbols-outlined">sports_volleyball</i>
-                    <h3>Volei</h3>
-                    <p>Jogo vôlei desde meus 10 anos, encontrei no vôlei uma forma leve e divertida de manter o corpo
-                        ativo e a mente equilibrada.</p>
+                    <h3><?php echo $arquivo[14]; ?></h3>
+                    <p><?php echo $arquivo[15]; ?></p>
                 </div><!--interesses-box-->
             </div><!--flex-->
         </div><!--comum-->
@@ -90,7 +84,7 @@ $sobrenome_maiusc = strtoupper($sobrenome);
 
 
     <section class="portfolio">
-        <h1 class="titulo_portfolio">PORTFÓLIO</h1>
+        <h1 class="titulo_portfolio"><?php echo strtoupper($arquivo[17]); ?></h1>
 
         <!-- Chef Dreams (direita) -->
         <div class="portfolio_cd">
@@ -98,13 +92,8 @@ $sobrenome_maiusc = strtoupper($sobrenome);
                 <img src="chefe_dreams/logo.png" alt="">
             </div>
             <div class="texto_cd">
-                <h1>Chef Dreams</h1>
-                <p>Site de venda de produtos derivados do chocolate e afins
-                   , oferecendo produtos artesanais e refinados, 
-                   com foco no chocolate de alta qualidade e em presentes sofisticados. 
-                   A proposta é criar um ambiente de prazer e sofisticação, 
-                   combinando a tradição dos doces com a modernidade e a inovação nos sabores.
-</p>
+                <h1><?php echo $arquivo[18]; ?></h1>
+                <p><?php echo $arquivo[19]; ?></p>
                 <div class="button"><a href="chefe_dreams/inicial.html">Ver site</a></div>
             </div>
         </div>
@@ -117,11 +106,8 @@ $sobrenome_maiusc = strtoupper($sobrenome);
             </div><!--img_portfolio-->
 
             <div class="texto_otomo">
-                <h1>Restaurante Otomo</h1>
-                <p>Site desenvolvido para um restaurante de comida japonesa.
-                    Um site que conecta a tradição japonesa, design minimalista e usabilidade moderna. 
-                    O objetivo do projeto foi criar uma presença digital elegante, funcional e com forte apelo visual, 
-                    valorizando a experiência gastronômica japonesa.</p>
+                <h1><?php echo $arquivo[21]; ?></h1>
+                <p><?php echo $arquivo[22]; ?></p>
                 <div class="button"><a href="OtomoRestaurante/OtomoRestaurante-main/index.html">Ver site</a></div>
 
             </div><!--texto_otomo-->
@@ -132,7 +118,7 @@ $sobrenome_maiusc = strtoupper($sobrenome);
     </section><!--portfolio-->
 
     <section class="fotografia">
-        <h1>FOTOGRAFIA</h1>
+        <h1><?php echo strtoupper($arquivo[24]); ?></h1>
         <div class="comum">
             
             <div class="container_fotografia">

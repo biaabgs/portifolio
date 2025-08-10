@@ -1,6 +1,28 @@
 Beatriz
+GonÇalves
 Gonçalves
 
 Sobre Mim
+Sou a Beatriz, estudo no Colégio Objetivo Senador Fláquer, atualmente estou cursando o 3° ano do ensino médio e faço curso técnico de Desenvolvimento de Sistemas no SENAI Armando de Arruda Pereira, tenho como objetivo fazer faculdade de Engenharia da Computação. Toco teclado e gosto de fotografia, as vezes brinco de ping pong.
 
-Me chamo Beatriz, estudo no Colégio Objetivo Senador Fláquer e faço curso no SENAI Armando de Arruda Pereira. Atualmente estou cursando o 3° ano do ensino médio, pretendo fazer faculdade de Engenharia da Computação. Toco teclado e gosto de fotografia, as vezes brinco de ping pong.
+Interesses
+Portfólio
+Desenvolvedora web com foco em frontend, vou compartilhar alguns projetos de site que desenvolvi.
+
+Fotografia
+No tempo livre gosto de tirar algumas fotos, capturar emoções, histórias e momentos que falam por si. Fotografar é uma forma de desacelerar, observar mais e transformar instantes comuns em memórias inesquecíveis.
+
+Vôlei
+Jogo vôlei desde meus 10 anos, encontrei no vôlei uma forma leve e divertida de manter o corpo ativo e a mente equilibrada.
+
+PortfÓlio
+Chef Dreams
+Site de venda de produtos derivados do chocolate e afins, oferecendo produtos artesanais e refinados, com foco no chocolate de alta qualidade e em presentes sofisticados. A proposta é criar um ambiente de prazer e sofisticação, combinando a tradição dos doces com a modernidade e a inovação nos sabores.
+
+Restaurante Otomo
+Site desenvolvido para um restaurante de comida japonesa. Um site que conecta a tradição japonesa, design minimalista e usabilidade moderna. O objetivo do projeto foi criar uma presença digital elegante, funcional e com forte apelo visual, valorizando a experiência gastronômica japonesa.
+
+Fotografia
+
+Footer
+Contato
