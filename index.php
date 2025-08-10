@@ -123,41 +123,41 @@ $sobrenome_maiusc = strtoupper($sobrenome);
             
             <div class="container_fotografia">
                     <div class="fotos1">
-                        <img src="foto1.jpg" alt="Foto 1">
+                        <img src="<?php echo $arquivo[25]; ?>" alt="Foto 1">
                     </div>
                     <div class="fotos1">
-                        <img src="foto2.jpg" alt="Foto 2">
+                        <img src="<?php echo $arquivo[26]; ?>" alt="Foto 2">
                     </div>
                     <div class="fotos1">
-                        <img src="foto3.jpg" alt="Foto 3">
+                        <img src="<?php echo $arquivo[27]; ?>" alt="Foto 3">
                     </div>
             </div><!-- container_fotografia -->
             <div class="container_fotografia">
                 <div class="fotos2">
-                    <img src="foto4.jpg" alt="Foto 4">
+                    <img src="<?php echo $arquivo[28]; ?>" alt="Foto 4">
                 </div>
                 <div class="fotos2">
-                    <img src="foto5.jpg" alt="Foto 5">
+                    <img src="<?php echo $arquivo[29]; ?>" alt="Foto 5">
                 </div>
                 </div><!-- fotos -->
             </div><!-- container_fotografia -->
             <div class="container_fotografia">
                     <div class="fotos1">
-                        <img src="foto6.PNG" alt="Foto 6">
+                        <img src="<?php echo $arquivo[30]; ?>" alt="Foto 6">
                     </div>
                     <div class="fotos1">
-                        <img src="foto7.jpeg" alt="Foto 7">
+                        <img src="<?php echo $arquivo[31]; ?>" alt="Foto 7">
                     </div>
                     <div class="fotos1">
-                        <img src="foto8.jpg" alt="Foto 8">
+                        <img src="<?php echo $arquivo[32]; ?>" alt="Foto 8">
                     </div>
             </div><!-- container_fotografia -->
             <div class="container_fotografia">
                 <div class="fotos2">
-                    <img src="foto9.jpg" alt="Foto 9">
+                    <img src="<?php echo $arquivo[33]; ?>" alt="Foto 9">
                 </div>
                 <div class="fotos2">
-                    <img src="foto10.jpg" alt="Foto 10">
+                    <img src="<?php echo $arquivo[34]; ?>" alt="Foto 10">
                 </div>
                 </div><!-- fotos -->
             </div><!-- container_fotografia -->
@@ -165,6 +165,53 @@ $sobrenome_maiusc = strtoupper($sobrenome);
     </section>
 
     <script src="script.js"></script>
+
+    <?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $nome = htmlspecialchars($_POST['nome']);
+    $email = htmlspecialchars($_POST['email']);
+    $mensagem = htmlspecialchars($_POST['mensagem']);
+
+    // Aqui você pode configurar o envio de email
+    // mail($destinatario, "Novo contato do portfólio", $mensagem, "From: $email");
+
+    echo "<p style='color:green; text-align:center;'>Mensagem enviada com sucesso! Obrigado, $nome.</p>";
+}
+?>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-contacts">
+            <h1>Entre em Contato</h1>
+            <p>Ficarei feliz em conversar com você!</p>
+
+            <form method="POST" class="footer-form">
+                <input type="text" name="nome" placeholder="Seu nome" required>
+                <input type="email" name="email" placeholder="Seu e-mail" required>
+                <textarea name="mensagem" placeholder="Sua mensagem" rows="4" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+
+            
+        </div>
+
+        <ul class="footer-list">
+            <li><h3>Portfólio</h3></li>
+            <li><a href="#projetos" class="footer-link">Projetos</a></li>
+            <li><a href="#sobre" class="footer-link">Sobre mim</a></li>
+            <li><a href="#contato" class="footer-link">Contato</a></li>
+        </ul>
+        
+        <div class="footer-contacts">
+        <div class="footer-social-media">
+                <a href="#" class="footer-link instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="footer-link linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" class="footer-link github"><i class="fa-brands fa-github"></i></a>
+            </div>
+    </div>
+
+</footer>
+
 </body>
 
 </html>

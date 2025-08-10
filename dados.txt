@@ -23,6 +23,18 @@ Restaurante Otomo
 Site desenvolvido para um restaurante de comida japonesa. Um site que conecta a tradição japonesa, design minimalista e usabilidade moderna. O objetivo do projeto foi criar uma presença digital elegante, funcional e com forte apelo visual, valorizando a experiência gastronômica japonesa.
 
 Fotografia
+fotos/foto1.jpg
+fotos/foto2.jpg
+fotos/foto3.jpg
+fotos/foto4.jpg
+fotos/foto5.jpg
+fotos/foto6.jpg
+fotos/foto7.jpeg
+fotos/foto8.jpg
+fotos/foto9.jpg
+fotos/foto10.jpg
 
-Footer
+foto_sm.jpg
+
 Contato
+
