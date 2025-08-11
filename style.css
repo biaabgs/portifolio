@@ -85,12 +85,13 @@ header ul li a:hover, header i:hover{
 }
 
 /* Banner  */
-
 .banner{
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .banner h1{
@@ -102,9 +103,119 @@ header ul li a:hover, header i:hover{
     color: #874421;
 }
 
+.banner p{
+    padding: 10px;
+    font-size: 3ch;
+    color: #502611;
+}
 /* Comum */
 .comum {
     max-width: 1380px;
+}
+
+/* Sobre mim */
+
+section.sobre_mim{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6vw;
+    background-color: #652e12;
+}
+
+.texto_sm{
+    background-color: transparent;
+    width: 50%;
+    height: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items:first baseline;
+    justify-content: center ;
+    color: white;
+    margin-right: 1vh;
+    margin-left: 12vh;
+    line-height: 3vh;
+}
+
+.texto_sm h1{
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 10ch;
+    line-height: 0.8;
+    margin-bottom: 2vh;
+}
+
+.texto_sm p{
+    padding-top: 5px;
+    font-size: 2.5ch;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.redes{
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items:first baseline;
+    justify-content: flex-start;
+}
+
+.minirede a{
+    text-decoration: none;
+}
+
+.minirede{
+    margin-top: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    margin-right: 5ch;
+}
+
+.minirede i{
+    text-decoration: none;
+    font-size: 70px;
+    transition: all 0.5s ease;
+    color: white;
+}
+.minirede i:hover{
+    color: #b98465;
+    cursor: pointer;
+}
+
+.img_sm{
+    max-width: 35%;
+    margin-left: 1vh;
+    min-height: 35vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: top 1vh;
+}
+
+.img_sm img{
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 0.75rem;
+}
+.logo{
+    color: transparent;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style:normal;
 }
 
 /* INTERESSES */
@@ -176,7 +287,6 @@ section.portfolio {
     background-color: #f0dcce;
     margin-top: 9.8vw;
     justify-content: center;
-    display: grid;
 }
 
 .titulo_portfolio{
@@ -184,12 +294,7 @@ section.portfolio {
     font-family: "Libertinus Serif", serif;
     font-size: 3.5em;
     color: #553d2a;
-    text-align: right;
-    margin-right: 7vw;
-}
-
-.portfolio_otomo, .portfolio_cd{
-    margin-right: 7vw;
+    margin-left: 3vw;
 }
 
 .texto_otomo p, .texto_cd p{
@@ -212,6 +317,7 @@ section.portfolio {
     padding: 0;
     font-family: "Red Hat Display", sans-serif;
     font-size: 2rem;
+    color: #c55957;
 }
 
 .button {
@@ -240,11 +346,6 @@ section.portfolio {
 }
 
 /* Chef Dreams */
-
-.texto_cd h1 {
-    color: #411e0c;
-}
-
 .texto_cd {
     display: flex;
     flex-direction: column;
@@ -259,8 +360,6 @@ section.portfolio {
     align-items: center;
     margin: 2vw;
     padding: 1vh;
-    width: 100%;
-    /* background-color: red; */
     width: 75vw;
     margin-left: 2vw;
     height: 18vw;
@@ -282,10 +381,6 @@ section.portfolio {
 
  .texto_otomo a{
     text-decoration: none;
-}
-
-.texto_otomo h1{
-    color: #c55957;
 }
 
 .portfolio_otomo {
@@ -350,114 +445,60 @@ section.fotografia {
     margin-top: 1vw;
 }
 
-/* Sobre mim */
-
-section.sobre_mim{
-    height: auto;
-    display: flex;
+/* Contato */
+section.contato{
+    background-color: #7b4230;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
-    padding: 6vw;
-    background-color: #411e0c;
+    display: flex;
+    padding: 3.5rem;
+    height: auto;
+    width: 100%;
 }
 
-.texto_sm{
-    background-color: transparent;
-    width: 50%;
-    height: 40vw;
+.container_contato{
+    width: 35%;
+    height: 30vw;
     display: flex;
     flex-direction: column;
-    align-items:first baseline;
-    justify-content: center ;
-    color: white;
-    margin-right: 1vh;
-    margin-left: 12vh;
+    justify-content: center;
 }
 
-.texto_sm h1{
-    font-family: "Bungee", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 10ch;
-    line-height: 0.8;
-    margin-bottom: 2vh;
+.container_contato h1 {
+    color: #dbbaac;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.texto_sm p{
-    padding-top: 5px;
-    font-size: 2ch;
-    font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
+.comunicacao{
+    display: flex;
+    gap: 5px;
 }
 
-.redes{
-    color: white;
-    text-decoration: none;
+.form_contato {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.form_contato input, .form_contato textarea{
+    margin-bottom: 20px;
     width: 100%;
-    margin-top: 15px;
-    display: flex;
-    flex-direction: row;
-    align-items:first baseline;
-    justify-content: flex-start;
-}
-
-.minirede a{
-    text-decoration: none;
-}
-
-.minirede{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: transparent;
-    margin-right: 1ch;
-    color: #c7b69f;
-}
-
-.minirede i{
-    text-decoration: none;
-    font-size: 30px;
-    transition: all 0.5s ease;
-    color: white;
-}
-.minirede i:hover{
-    color: #502611;
-}
-
-.img_sm{
-    max-width:50%;
-    margin-left: 1vh;
-    min-height: 35vw;
-    overflow:hidden;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    padding: top 1vh; ;
-}
-
-.img_sm img{
-    width: 80%;
-    height: 80%;
-    object-fit: cover;
-}
-.logo{
-    color: transparent;
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style:normal;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
 }
 
 /* Footer */
 footer {
     width: 100%;
     text-align: center;
-    margin-top: 40px;
     bottom: 0;
     background-color: #55362a;
 }
@@ -472,28 +513,15 @@ footer {
     width: 100%;
 }
 
-.footer-contacts h1 {
-    margin-bottom: 0.75rem;
-    color: #dbbaac;
-}
 
-.footer-form {
+.form_contato {
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin-top: 1rem;
 }
 
-.footer-form input,
-.footer-form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-family: inherit;
-}
-
-.footer-form button {
+.form_contato button {
     background-color: #502611;
     color: white;
     padding: 10px;
@@ -502,7 +530,7 @@ footer {
     cursor: pointer;
 }
 
-.footer-form button:hover {
+.form_contato button:hover {
     background-color: #411e0c;
 }
 
@@ -525,8 +553,6 @@ footer {
     font-size: 20px;
 }
 
-
-
 .footer-list {
     list-style: none;
     display: flex;
@@ -541,4 +567,9 @@ footer {
 
 .footer-list .footer-link:hover {
     color: #f2e8e1;
+}
+
+.footer-list {
+    color: #dbbaac;
+    font-family: "Libertinus Serif", serif;
 }

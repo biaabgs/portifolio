@@ -1,7 +1,5 @@
 <?php 
 $arquivo = file("dados.txt");
-$sobrenome = $arquivo[1];
-$sobrenome_maiusc = strtoupper($sobrenome);
 ?>
 
 <html lang="pt-br">
@@ -25,9 +23,9 @@ $sobrenome_maiusc = strtoupper($sobrenome);
                 <nav>
                     <ul>
                         <li><a class="titulos" onclick="scrollWin()"><i class="fa-regular fa-house"></i></a></li>
-                        <li><a class="titulos" onclick="sobreMim()" onclick="return false;" ><?php echo $arquivo[4]; ?></a></li>
+                        <li><a class="titulos" onclick="sobreMim()"><?php echo $arquivo[4]; ?></a></li>
                         <li><a class="titulos" onclick="interesses()">Interesses</a></li>
-                        <li><a class="titulos" onclick="scrollWin4()">Contato</a></li>
+                        <li><a class="titulos" onclick="contato()">Contato</a></li>
                     </ul>
                 </nav>
             </div><!--flex-->
@@ -35,42 +33,44 @@ $sobrenome_maiusc = strtoupper($sobrenome);
     </header>
 
     <section class="banner">
-        <h1><?php echo strtoupper($arquivo[0]); ?> <span><?php echo $sobrenome_maiusc;?></span></h1>
+        <h1><?php echo strtoupper($arquivo[0]); ?> <span><?php echo strtoupper($arquivo[1]) ;?></span></h1>
+        <p> Full-stack | Programção | Engenharia | Fotógrafa </p>
     </section>
 
     
 
     <section class="sobre_mim" id="sobre_mim">
             <div class="texto_sm">
-            <h1 class="txtbanner2"><p><?php echo $arquivo[0] . " " . $arquivo[2];?></p></h1>
+            <h1><p><?php echo $arquivo[0] . " " . $arquivo[2];?></p></h1>
             <p><?php echo $arquivo[5]; ?></p>
         <div class="redes">
-            <div class="minirede"><a href="https://www.instagram.com/bia.dlk" target="_blank" ><i class="fa-brands fa-instagram"></i></a></div>
-            <div class="minirede"><a href="https://github.com/biaabgs" target="_blank" ><i class="fa-brands fa-github"></i></a></div>
-            <div class="minirede"><a href="https://www.linkedin.com/" target="_blank" ><i class="fa-brands fa-linkedin"></i></a></div>
+            <div class="minirede"><i class="fa-brands fa-html5"></i></i></div>
+            <div class="minirede"><i class="fa-brands fa-css3-alt"></i></div>
+            <div class="minirede"><i class="fa-brands fa-square-js"></i></div>
+            <div class="minirede"><i class="fa-brands fa-php"></i></div>            
         </div>
     </div>
-        <div class="img_sm">
+        <div class="img_sm"  >
             <img src="<?php echo $arquivo[36]; ?>" alt="minifigure">
         </div>
 
     </section>
-
-    <section class="interesses" id="interesses">
+        <div id="interesses"></div>
+    <section class="interesses">
         <div class="comum">
             <h1 class="titulo"><?php echo strtoupper($arquivo[7]);?></h1>
             <div class="flex_interesses">
-                <div class="interesses-box"><a onclick="scrollWin5()">
+                <div class="interesses-box"><a onclick="projetos()">
                         <i class="material-symbols-outlined">computer</i>
                         <h3><?php echo $arquivo[8]; ?></h3>
                         <p><?php echo $arquivo[9]; ?></p>
                 </div><!--interesses-box--></a>
 
-                <div class="interesses-box">
+                <div class="interesses-box"><a onclick="fotografia()">
                     <i class="material-symbols-outlined">photo_camera</i>
                     <h3><?php echo $arquivo[11]; ?></h3>
                     <p><?php echo $arquivo[12]; ?></p>
-                </div><!--interesses-box-->
+                </div><!--interesses-box--></a>
 
                 <div class="interesses-box">
                     <i class="material-symbols-outlined">sports_volleyball</i>
@@ -83,20 +83,8 @@ $sobrenome_maiusc = strtoupper($sobrenome);
 
 
 
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <h1 class="titulo_portfolio"><?php echo strtoupper($arquivo[17]); ?></h1>
-
-        <!-- Chef Dreams (direita) -->
-        <div class="portfolio_cd">
-            <div class="imgprojeto">
-                <img src="chefe_dreams/logo.png" alt="">
-            </div>
-            <div class="texto_cd">
-                <h1><?php echo $arquivo[18]; ?></h1>
-                <p><?php echo $arquivo[19]; ?></p>
-                <div class="button"><a href="chefe_dreams/inicial.html">Ver site</a></div>
-            </div>
-        </div>
 
         <!-- Otomo (esquerda) -->
         <div class="portfolio_otomo">
@@ -108,16 +96,26 @@ $sobrenome_maiusc = strtoupper($sobrenome);
             <div class="texto_otomo">
                 <h1><?php echo $arquivo[21]; ?></h1>
                 <p><?php echo $arquivo[22]; ?></p>
-                <div class="button"><a href="OtomoRestaurante/OtomoRestaurante-main/index.html">Ver site</a></div>
+                <div class="button"><a href="OtomoRestaurante/OtomoRestaurante-main/index.html" target="_blank">Ver site</a></div>
 
             </div><!--texto_otomo-->
         </div><!--portfolio_otomo-->
 
-        
+        <!-- Chef Dreams (direita) -->
+        <div class="portfolio_cd">
+            <div class="imgprojeto">
+                <img src="chefe_dreams/logo.png" alt="">
+            </div>
+            <div class="texto_cd">
+                <h1><?php echo $arquivo[18]; ?></h1>
+                <p><?php echo $arquivo[19]; ?></p>
+                <div class="button"><a href="chefe_dreams/inicial.html" target="_blank">Ver site</a></div>
+            </div>
+        </div>
 
     </section><!--portfolio-->
 
-    <section class="fotografia">
+    <section class="fotografia" id="fotografia">
         <h1><?php echo strtoupper($arquivo[24]); ?></h1>
         <div class="comum">
             
@@ -176,37 +174,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-<footer id="contato">
-    <div class="footer-container">
-        <div class="footer-contacts">
+    <section class="contato" id="contato">
+        <div class="container_contato">
             <h1><?php echo $arquivo[38]; ?></h1>
-
-            <form method="POST" class="footer-form">
-                <input type="text" name="nome" placeholder="Seu nome" required>
-                <input type="email" name="email" placeholder="Seu e-mail" required>
-                <textarea name="mensagem" placeholder="Sua mensagem" rows="4" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-
-            
-        </div>
-
-        <ul class="footer-list">
-            <li><h3>Portfólio</h3></li>
-            <li><a href="#projetos" class="footer-link">Projetos</a></li>
-            <li><a href="#sobre" class="footer-link">Sobre mim</a></li>
-            <li><a href="#contato" class="footer-link">Contato</a></li>
-        </ul>
-        
-        <div class="footer-contacts">
-        <div class="footer-social-media">
-                <a href="#" class="footer-link instagram"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#" class="footer-link linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#" class="footer-link github"><i class="fa-brands fa-github"></i></a>
+        <form method="POST" class="form_contato">
+            <input type="text" name="nome" placeholder="Seu nome" required class="nome">
+            <div class="comunicacao">
+            <input type="email" name="email" placeholder="Seu e-mail" required class="email">
+            <input type="tel" name="email" placeholder="Seu telefone" required class="tel">
             </div>
-    </div>
-
-</footer>
+            <textarea name="mensagem" placeholder="Sua mensagem" rows="4" required class="mensagem"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        </div>
+    </section>
 
 </body>
 
@@ -223,5 +204,11 @@ function interesses() {
 
 function contato() {
     document.getElementById('contato').scrollIntoView({behavior: 'smooth'});
+}
+function projetos() {
+    document.getElementById('projetos').scrollIntoView({behavior: 'smooth'});
+}
+function fotografia() {
+    document.getElementById('fotografia').scrollIntoView({behavior: 'smooth'});
 }
 </script>
