@@ -354,13 +354,10 @@ section.fotografia {
 
 section.sobre_mim{
     height: auto;
-    background-position: 100% 0;
-    background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 10vw;
+    padding: 6vw;
     background-color: #411e0c;
 }
 
@@ -477,6 +474,7 @@ footer {
 
 .footer-contacts h1 {
     margin-bottom: 0.75rem;
+    color: #dbbaac;
 }
 
 .footer-form {
@@ -496,7 +494,7 @@ footer {
 }
 
 .footer-form button {
-    background-color: #ff6664;
+    background-color: #502611;
     color: white;
     padding: 10px;
     border: none;
@@ -505,7 +503,7 @@ footer {
 }
 
 .footer-form button:hover {
-    background-color: #e14b49;
+    background-color: #411e0c;
 }
 
 .footer-social-media {
@@ -538,9 +536,9 @@ footer {
 
 .footer-list .footer-link {
     text-decoration: none;
-    color: #555;
+    color: #ffffff;
 }
 
 .footer-list .footer-link:hover {
-    color: #ff6664;
+    color: #f2e8e1;
 }

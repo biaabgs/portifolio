@@ -34,7 +34,7 @@ fotos/foto8.jpg
 fotos/foto9.jpg
 fotos/foto10.jpg
 
-foto_sm.jpg
+fotos/foto_sm.jpg
 
-Contato
+Entre em Contato
 

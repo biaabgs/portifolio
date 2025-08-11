@@ -25,8 +25,8 @@ $sobrenome_maiusc = strtoupper($sobrenome);
                 <nav>
                     <ul>
                         <li><a class="titulos" onclick="scrollWin()"><i class="fa-regular fa-house"></i></a></li>
-                        <li><a class="titulos" onclick="scrollWin2()"><?php echo $arquivo[4]; ?></a></li>
-                        <li><a class="titulos" onclick="scrollWin3()">Interesses</a></li>
+                        <li><a class="titulos" onclick="sobreMim()" onclick="return false;" ><?php echo $arquivo[4]; ?></a></li>
+                        <li><a class="titulos" onclick="interesses()">Interesses</a></li>
                         <li><a class="titulos" onclick="scrollWin4()">Contato</a></li>
                     </ul>
                 </nav>
@@ -40,7 +40,7 @@ $sobrenome_maiusc = strtoupper($sobrenome);
 
     
 
-    <section class="sobre_mim">
+    <section class="sobre_mim" id="sobre_mim">
             <div class="texto_sm">
             <h1 class="txtbanner2"><p><?php echo $arquivo[0] . " " . $arquivo[2];?></p></h1>
             <p><?php echo $arquivo[5]; ?></p>
@@ -51,12 +51,12 @@ $sobrenome_maiusc = strtoupper($sobrenome);
         </div>
     </div>
         <div class="img_sm">
-            <img src="foto_sm.jpg" alt="minifigure">
+            <img src="<?php echo $arquivo[36]; ?>" alt="minifigure">
         </div>
 
     </section>
 
-    <section class="interesses">
+    <section class="interesses" id="interesses">
         <div class="comum">
             <h1 class="titulo"><?php echo strtoupper($arquivo[7]);?></h1>
             <div class="flex_interesses">
@@ -176,11 +176,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-<footer>
+<footer id="contato">
     <div class="footer-container">
         <div class="footer-contacts">
-            <h1>Entre em Contato</h1>
-            <p>Ficarei feliz em conversar com você!</p>
+            <h1><?php echo $arquivo[38]; ?></h1>
 
             <form method="POST" class="footer-form">
                 <input type="text" name="nome" placeholder="Seu nome" required>
@@ -212,3 +211,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </body>
 
 </html>
+
+<script>
+    function sobreMim() {
+    document.getElementById('sobre_mim').scrollIntoView({behavior: 'smooth'});
+}
+
+function interesses() {
+    document.getElementById('interesses').scrollIntoView({behavior: 'smooth'});
+}
+
+function contato() {
+    document.getElementById('contato').scrollIntoView({behavior: 'smooth'});
+}
+</script>
