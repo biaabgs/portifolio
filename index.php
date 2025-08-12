@@ -164,7 +164,7 @@ $arquivo = file("dados.txt");
 
     <script src="script.js"></script>
 
-    <?php
+<?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nome = htmlspecialchars($_POST['nome']);
     $email = htmlspecialchars($_POST['email']);
@@ -189,8 +189,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
     </section>
 
+    <footer class="footer"> 
+    <div class="flexbox"><!--flexbox-->
+    <h1>Contato</h1>
+    <h2 >goncalvesdasilvabia@gmail.com</h2>
+    <h2>(55) 11 00000-0000</h2>
+    <div class="footerredes">
+        <nav>
+        <div class="rede_footer"><a href="https://www.instagram.com" target="_blank" ><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://github.com" target="_blank" ><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank" ><i class="fa-brands fa-linkedin"></i></a></div>
+        </nav>
+    </div>
+    <div id="footer_copyright">
+        &#169
+        2023 all rights reserved
+    </div>
+    </div><!--fim flexbox-->
+</footer>
+<!--FIM FOOTER-->
 </body>
-
 </html>
 
 <script>
