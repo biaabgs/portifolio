@@ -297,6 +297,19 @@ section.portfolio {
     margin-left: 3vw;
 }
 
+@keyframes scrollLateral{
+    from{
+        opacity: 0;
+        transform: scale(0.1);
+        transform: translateX(-100%);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+        transform: translateX(0);
+    }
+}
+
 .texto_otomo p, .texto_cd p{
     margin-left: 15px;
     text-align: left;
@@ -364,6 +377,9 @@ section.portfolio {
     margin-left: 2vw;
     height: 18vw;
     margin-bottom: 1vw;
+    animation: scrollLateral 10s linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
 }
 
 .imgprojeto img{
@@ -386,10 +402,12 @@ section.portfolio {
 .portfolio_otomo {
     display: flex;
     align-items: center;
-    /* background-color: #063025; */
     width: 75vw;
     margin-left: 2vw;
     height: 18vw;
+    animation: scrollLateral 10s linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 50%;
 }
 
 /* FOTOGRAFIA */
@@ -447,21 +465,38 @@ section.fotografia {
 
 /* Contato */
 section.contato{
-    background-color: #7b4230;
+    background: linear-gradient(82deg,#411e0c,#7b4230,#553d2a);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
     justify-content: center;
     align-items: center;
     display: flex;
-    padding: 3.5rem;
+    padding: 8rem;
     height: auto;
     width: 100%;
 }
 
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .container_contato{
-    width: 35%;
+    width: 30%;
     height: 30vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    box-shadow: 0 0 20px #c7b69f;
+    padding: 20px;
+    border-radius: 20px;
 }
 
 .container_contato h1 {
@@ -474,13 +509,13 @@ section.contato{
 
 .comunicacao{
     display: flex;
-    gap: 5px;
+    gap: 20px;
 }
 
 .form_contato {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 0px;
     display: flex;
     flex-direction: column;
     margin-top: 1rem;
@@ -489,10 +524,25 @@ section.contato{
 .form_contato input, .form_contato textarea{
     margin-bottom: 20px;
     width: 100%;
+    font-size: 15px;
     padding: 20px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 10px;
     font-family: inherit;
+}
+
+.form_contato button{
+    background-color: #dbbaac;
+    font-size: 1.5rem;
+    color: white;
+    display: flex;
+    border-radius: 50px;
+    text-align: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    align-items: center;
+    border: none;
 }
 
 /* Footer */
@@ -501,8 +551,8 @@ section.contato{
     display: flex;
     justify-content: center;
     overflow: hidden;
-    color: white;
-    padding: 5dvh;
+    background-color: #411e0c;
+    padding: 5vh;
 }
 
 .flexbox{
@@ -530,10 +580,16 @@ nav{
 }
 
 .rede_footer {
-    margin-top: 3vw;
+    margin-top: 1vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: red;
     text-decoration: none;
+    font-size: 5ch;
 }
+
+.rede_footer a i{
+    text-decoration: none;
+    color: white;
+}
+

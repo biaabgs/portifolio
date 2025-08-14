@@ -181,7 +181,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <input type="text" name="nome" placeholder="Seu nome" required class="nome">
             <div class="comunicacao">
             <input type="email" name="email" placeholder="Seu e-mail" required class="email">
-            <input type="tel" name="email" placeholder="Seu telefone" required class="tel">
+            <input type="tel" name="telefone" placeholder="Seu telefone" required class="tel">
             </div>
             <textarea name="mensagem" placeholder="Sua mensagem" rows="4" required class="mensagem"></textarea>
             <button type="submit">Enviar</button>
@@ -203,7 +203,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
     <div id="footer_copyright">
         &#169
-        2023 all rights reserved
+        Beatriz Gonçalves. Todos os direitos reservados
     </div>
     </div><!--fim flexbox-->
 </footer>
